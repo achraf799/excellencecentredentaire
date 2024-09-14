@@ -1,0 +1,303 @@
+#Aboutus {
+    width: 100%;
+}
+
+
+.doctors-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 600px;
+    justify-content: center;
+    gap: 50px;
+    background-image: url("../../assets/aboutusimg.png");
+    background-position: right;
+    background-size: cover;
+
+}
+
+.aboutus-title {
+    color: var(--dark-color-15, #00296D);
+    leading-trim: both;
+    text-edge: cap;
+    padding: 40px 0 0 40px;
+    text-shadow: 5px 5px 0px #D4E4F4;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.doctors-title {
+    color: var(--accent-color-5, #44C6E9);
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding-left: 40px;
+}
+
+.swiper-doctors {
+    display: flex;
+    width: 100%;
+}
+
+.slide-doctor {
+    height: 480px;
+    margin: auto;
+}
+
+.doctor-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.doctor-card img {
+    height: 400px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(50px);
+}
+
+.doctor-text {
+    background-image: url("../../assets/doctorbackinfo.png");
+    background-size: cover;
+    padding: 20px;
+    gap: 10px;
+    width: 500px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    border-radius: 20px;
+    text-align: start;
+}
+
+.doctor-text h3 {
+    color: #000;
+    text-align: left;
+    font-family: Raleway;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.64px;
+    margin-bottom: 20px;
+}
+
+.doctor-text h2 {
+    color: #000;
+    text-align: left;
+    font-family: Raleway;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.8px;
+}
+
+.doctor-text p {
+    color: #000;
+
+    /* Desktop/Text 2 */
+    font-family: Raleway;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    width: 350px;
+}
+
+.clinic-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 600px;
+    justify-content: center;
+    gap: 50px;
+}
+
+.clinic-container h3 {
+    color: var(--accent-color-5, #44C6E9);
+    font-family: Raleway;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding-left: 40px;
+}
+
+.swiper-clinic {
+    display: flex;
+}
+.swiper-clinic1 {
+    display: none;
+}
+
+.slide-clinic {
+    height: 450px;
+}
+
+.doctor-card {}
+
+.doctor-card img {}
+
+@media only screen and (max-width: 700px) {
+
+    .aboutus-title {
+        text-shadow: 3px 2px 0px #D4E4F4;
+        font-size: 42px;
+        text-align: center;
+    }
+
+    .doctors-title {
+        text-align: center;
+        font-size: 22px;
+    }
+
+    .doctors-container {
+        gap: 0px;
+        padding: 10px;
+    }
+
+    .swiper-doctors {}
+
+    .slide-doctor {
+        height: auto;
+        width: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .doctor-card {
+        width: 400px;
+        flex-direction: column;
+        height: 500px;
+    }
+
+    .doctor-card img {
+        height: 200px;
+    }
+
+    .doctor-text {
+        padding: 10px;
+        width: 250px;
+        height: 200px;
+        border-radius: 20px;
+        border: 2px solid var(--main-blue, #3c46fc);
+
+    }
+
+    .doctor-text h3 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .doctor-text h2 {
+        font-size: 24px;
+    }
+
+    .doctor-text p {
+        font-size: 14px;
+        width: 200px;
+    }
+
+    .clinic-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 400px;
+        justify-content: center;
+        gap: 20px;
+    }
+    
+    .clinic-container h3 {
+        color: var(--accent-color-5, #44C6E9);
+        font-family: Raleway;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        padding-left: 40px;
+    }
+    
+    .swiper-clinic {
+        display: none;
+    }
+    .swiper-clinic1 {
+        display: flex;
+    }
+    
+    .slide-clinic {
+        height: 300px;
+        width: 100%;
+    }
+    
+    .clinic-card {
+        height: 100%;
+        width: 100%;
+    }
+    
+    .clinic-card img {}
+}
+
+@media only screen and (max-width: 1000px) and (min-width: 700px) {
+    .aboutus-title {
+        text-shadow: 3px 2px 0px #D4E4F4;
+        font-size: 50px;
+        text-align: center;
+    }
+
+    .doctors-title {
+        text-align: center;
+        font-size: 28px;
+    }
+
+
+    .doctor-card img {
+        height: 350px;
+    }
+.doctor-text {
+    }
+
+
+    .clinic-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 700px;
+        justify-content: center;
+        gap: 20px;
+    }
+    
+    .clinic-container h3 {
+        color: var(--accent-color-5, #44C6E9);
+        font-family: Raleway;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        padding-left: 40px;
+    }
+    .swiper-clinic {
+        display: none;
+    }
+    .swiper-clinic1 {
+        display: flex;
+    }
+    
+    .slide-clinic {
+        height: 600px;
+        width: 100%;
+    }
+    
+    .clinic-card {
+        height: 80%;
+        width: 100%;
+    }
+    
+    .clinic-card img {}
+}

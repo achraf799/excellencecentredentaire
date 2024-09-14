@@ -1,0 +1,169 @@
+
+#Services {
+    display: flex;
+    padding: 40px;
+    justify-content: center;
+}
+
+.services-container h1 {
+    color: var(--dark-color-15, #00296D);
+    text-shadow: 5px 5px 0px #D4E4F4;
+    font-family: Raleway;
+    font-weight: 600;
+}
+
+.services-row {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.service-card {
+    display: flex;
+    flex-direction: column;
+    width: 28rem;
+    height: 350px;
+    justify-content: center;
+    align-items: flex-start;
+    border-radius: 15px;
+    background: rgba(255, 249, 253, 0.60);
+    box-shadow: 5px 5px 20px 0px #D4E4F4;
+    gap: 20px;
+}
+
+.service-card img {
+    height: 50px;
+    width: auto;
+}
+
+.service-card h3 {
+    color: var(--accent-color-5, #2977D5);
+    leading-trim: both;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    width: 390px;
+}
+
+.service-card p {
+    color: var(--Grey-Color, #666);
+    font-family: Raleway;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.swiper-container {
+display: none;
+}
+
+
+
+@media only screen and (max-width: 700px) {
+
+    #Services {
+        padding: 0;
+    }
+
+    .services-container h1 {
+        text-shadow: 3px 2px 0px #D4E4F4;
+        text-align: center;
+    }
+
+    .swiper-container {
+        display: flex;
+        margin: auto;
+        width: 100%;
+        height: 450px;
+        padding: 20px;
+    }
+
+    .slide-container {
+        height: 400px;
+        width: 90%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .service-card {
+        width: 320px;
+        height: 350px;
+        padding: 20px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .services-row {
+        display: none;
+    }
+
+    .service-card h3 {
+        font-size: 22px;
+        width: 270px;
+    }
+
+    .service-card p {
+        font-size: 14px;
+        line-height: 20px;
+        width: 250px;
+    }
+
+}
+@media only screen and (max-width: 1000px) and (min-width: 700px) {
+
+    #Services {
+        padding: 0;
+    }
+
+    .services-container h1 {
+        text-shadow: 3px 2px 0px #D4E4F4;
+        font-size: 50px;
+        text-align: center;
+    }
+
+    .swiper-container {
+        display: flex;
+        width: 100vw;
+        margin: auto;
+        height: 500px;
+        padding: 20px;
+    }
+
+    .slide-container {
+        height: 420px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .service-card {
+        width: 400px;
+        height: 420px;
+        padding: 20px;
+        align-items: center;
+        text-align: center;
+      }
+      .service-card img {
+        height: 70px;
+        width: auto;
+      }
+
+    .services-row {
+        display: none;
+    }
+
+    .service-card h3 {
+        font-size: 35px;
+        width: 270px;
+    }
+
+    .service-card p {
+        font-size: 14px;
+        line-height: 20px;
+        width: 250px;
+    }
+
+}

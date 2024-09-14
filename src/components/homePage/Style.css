@@ -1,0 +1,155 @@
+#Home{
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+    align-items:flex-end;
+    }
+    .home-container{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-between;
+    pad: 50px 0;
+    height: 100vh;
+    width: 100%; 
+    overflow: hidden;
+    }
+    .doctor-home{
+        width: 600px;
+        height: 100vh;
+        display: flex;
+        align-items: flex-end;
+    }
+    .doctor-home img{
+        width: 512px;
+height: auto;
+flex-shrink: 0;
+    }
+    .home-text {
+        height: 50%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        gap: 70px;
+    }
+    .home-text h1{
+        color: #000A2D;
+    text-align: center;
+    font-family: Raleway;
+    font-size: 56px;
+    font-weight: 800;
+    line-height: 74.8px; 
+    letter-spacing: -1.5px;
+    width: 698px;
+height: 242px;
+    }
+    .home-text h1 span{
+        color: #03A9F4;
+    
+    }
+    .home-button{
+        border-radius: 100px;
+        background: #009EFF;
+        padding: 15px 25px;
+        color: #FFF;
+text-align: center;
+font-family: Raleway;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+    }
+    .home-text img{
+        width: auto;
+        height: 32px;
+        cursor: pointer;
+    }
+    .home-img{
+    overflow: hidden;
+    }
+    .home-img img{
+
+    }
+    .vectorHome{}
+    .home-res-img{
+        display: none;
+    }
+    @media only screen and (max-width: 700px) {
+    
+
+        .home-container {
+            padding:  0 40px;
+            flex-direction: column;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .doctor-home{
+            display: none;
+        }
+        .home-text {
+            height: unset;
+            justify-content: center;
+            flex-direction: column;
+            gap: 50px;
+        }
+        .home-text h1 {
+            font-size: 40px;
+            font-weight: 600;
+            line-height: 50px;
+            letter-spacing: 0;
+            width: 100%;
+            height: unset;
+        }
+        .home-button {
+            margin: 40px 0;
+        }
+        .home-text img {
+            /* display: none; */
+        }
+        .home-img {
+            /* width: 100%;
+            padding: 20px; */
+            display: none;
+        }
+    }
+
+    @media only screen and (max-width: 1000px ) and (min-width: 700px) {
+        .home-container {
+            padding:  0 40px;
+            flex-direction: column;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .doctor-home{
+            display: none;
+        }
+        .home-text {
+            height: unset;
+            justify-content: center;
+            flex-direction: column;
+            gap: 50px;
+        }
+        .home-text h1 {
+            /* font-size: 40px; */
+            /* font-weight: 600;
+            line-height: 50px;
+            letter-spacing: 0;
+            width: 100%;
+            height: unset;*/
+        } 
+        .home-button {
+            margin: 40px 0;
+            padding: 20px 40px;
+            font-family: Raleway;
+            font-size: 30px;
+        }
+        .home-text img {
+            /* display: none; */
+        }
+        .home-img {
+            display: none;
+        }
+    
+    }

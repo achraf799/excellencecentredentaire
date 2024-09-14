@@ -1,0 +1,9 @@
+@import './style/DesktopStyle.css';
+@import './style/PhoneStyle.css';
+@import './style/TabletteStyle.css';
+* {
+  margin: 0%;
+  padding: 0%;
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
