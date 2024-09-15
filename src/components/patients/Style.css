@@ -1,0 +1,151 @@
+#Patients {
+    display: flex;
+    width: 100%;
+    padding: 40px;
+    justify-content: center;
+}
+
+.patients-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    gap: 50px;
+}
+
+.patients-container h1 {
+    color: var(--dark-color-15, #00296D);
+    text-shadow: 5px 5px 0px #D4E4F4;
+    font-family: Raleway;
+    font-weight: 600;
+}
+
+.swiper1-container{
+    display: flex;
+    gap: 4rem;
+    width: 100%;
+}
+
+.patient-card{
+    justify-content: center;
+    align-items: center;
+    background-image: url(../../assets/patientsBack.png);
+    background-size: cover;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+/* .patient-card img{
+    height: 300px;
+    width: auto;
+} */
+.patient-logo{
+    width: 20rem;
+    height: 20rem;
+}
+.patient-img img{
+    width: 100%;
+    object-fit: cover;
+}
+.swiper2-container{
+    display: none;
+}
+
+.patient-card h3{
+    color: #000;
+text-align: center;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 0.8px;
+margin-bottom: 2rem;
+}
+
+@media only screen and (max-width: 700px) {
+    .patients-container h1 {
+        text-shadow: 3px 2px 0px #D4E4F4;
+        text-align: center;
+    }
+    .swiper1-container{
+        display: none;
+    }
+    .swiper2-container{
+        display: flex;
+    }
+    
+    .patient-card{
+        display: flex;
+        flex-direction: column;
+        height: 80%;
+        padding: 0px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50px;
+        background-image: url(../../assets/patientsBack.png);
+        background-size: cover;
+    }
+    
+    /* .patient-card img{
+        height: 220px;
+        width: auto;
+    } */
+    .patient-logo{
+        height: 220px;
+        width: auto;
+    }
+    .patient-card h3{
+    font-size: 30px;
+    }
+
+
+}
+@media only screen and (max-width: 1000px) and (min-width: 700px) {
+   
+    .patients-container h1 {
+        text-shadow: 3px 2px 0px #D4E4F4;
+        font-size: 50px;
+        text-align: center;
+    }
+    .swiper1-container{
+        display: flex;
+        width: 100%;
+    }
+    
+    .slide-patient{
+       height: 600px;
+       width: 350px;
+       display: flex;
+           justify-content: center;
+        align-items: center; 
+    }
+    
+    .patient-card{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 80%;
+        padding: 50px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50px;
+        gap: 20px;
+        background-image: url(../../assets/patientsBack.png);
+        background-size: cover;
+    }
+    
+    /* .patient-card img{
+        height: 300px;
+        width: auto;
+    } */
+    .patient-logo{
+        height: 300px;
+        width: auto;
+    }
+    
+    .swiper2-container{
+        display: none;
+    }
+    .patient-card h3{
+        font-size: 30px;
+        }
+}
